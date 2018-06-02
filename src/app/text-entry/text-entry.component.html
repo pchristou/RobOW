@@ -1,0 +1,8 @@
+<mat-form-field class="text-area-input">
+  <textarea class="textEntry" #textField matInput matTextareaAutosize matAutosizeMinRows="1.1" matAutosizeMaxRows="2"></textarea>
+</mat-form-field>
+
+<button [disabled]="!text.nativeElement.value.trim().length" (click)="addMessage()" mat-icon-button>
+  <mat-icon *ngIf="text.nativeElement.value.trim().length" aria-label="RobOW icon button" svgIcon="robow_logo_small"></mat-icon>     
+  <mat-icon *ngIf="!text.nativeElement.value.trim().length" aria-label="RobOW disabled icon button" svgIcon="robow_logo_small_disabled"></mat-icon>            
+</button>

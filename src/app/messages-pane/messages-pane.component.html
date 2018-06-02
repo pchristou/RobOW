@@ -1,0 +1,11 @@
+<div #scrolluser [scrollTop]="scrolluser.scrollHeight" style="height:90%;overflow-x: hidden; overflow-y: scroll">
+  
+      <mat-list role="list">
+          <mat-list-item *ngFor="let line of lines" [class]="line.sender" role="listitem">
+                  
+              <div [innerHTML]="line.message"></div>
+  
+          </mat-list-item>
+      </mat-list>
+  
+  </div>

@@ -1,0 +1,6 @@
+<div id="robow_container">
+    
+      <app-messages-pane [lines]="(messages$ | async)"></app-messages-pane>
+      <app-text-entry (messageSent)="addToMessagePane($event)"></app-text-entry>
+    
+</div>
